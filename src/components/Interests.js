@@ -1,4 +1,4 @@
-import './Interests.css';
+import './styles/Interests.css';
 import React from 'react';
 import uniqid from "uniqid";
 

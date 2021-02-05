@@ -1,4 +1,4 @@
-import './Education.css';
+import './styles/Education.css';
 import React from 'react';
 import uniqid from "uniqid";
 

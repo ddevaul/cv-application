@@ -1,4 +1,4 @@
-import './WorkExperience.css';
+import './styles/WorkExperience.css';
 import React from 'react';
 import uniqid from "uniqid";
 // add in delete button 

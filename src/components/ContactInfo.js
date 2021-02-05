@@ -1,4 +1,4 @@
-import './ContactInfo.css'
+import './styles/ContactInfo.css'
 import React from 'react';
 
 export default class ContactInfo extends React.Component {

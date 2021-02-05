@@ -1,4 +1,4 @@
-import './Skills.css';
+import './styles/Skills.css';
 import React from 'react';
 import uniqid from "uniqid";
 import Rating from '@material-ui/lab/Rating';

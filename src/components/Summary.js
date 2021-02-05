@@ -1,4 +1,4 @@
-import './Summary.css'
+import './styles/Summary.css'
 import React from 'react';
 
 export default class Summary extends React.Component {
