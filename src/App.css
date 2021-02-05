@@ -1,38 +1,50 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page {
+  height: 1500px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-container{
+  margin: 0 auto;
+  width: 1125px;
+  display: grid;
+/* could make the left hand side its own flex-direction: column div */
+  grid-template-areas: 
+  "contact contact"
+  "container  education"
+  "container work"
+  "container projects";
+  grid-template-columns: 2fr 5fr;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contact{
+ grid-area: contact;
+}
+
+.work{
+  grid-area: work;
+}
+
+.projects{
+  grid-area: projects;
+}
+
+.container{
+  grid-area: container;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.education{
+  grid-area: education;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ .line {
+   position: absolute;
+   height: calc(1500px - 9rem);
+   width: 2px;
+   background-color: black;
+   left: 472px;
+   top: 11rem;
+ }

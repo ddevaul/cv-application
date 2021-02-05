@@ -1,12 +1,13 @@
+import './ContactInfo.css'
 import React from 'react';
 
 export default class ContactInfo extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      editing: true,
-      firstname: "desi",
-      lastname: "devaul",
+      editing: false,
+      firstname: "Desi",
+      lastname: "DeVaul",
       phone: "123455789",
       email: "ddevaul@gmail.com",
       linkedin: "desi@linkedin",
@@ -24,39 +25,41 @@ export default class ContactInfo extends React.Component {
     const {editing, firstname, lastname, phone, email, linkedin} = this.state;
     if (editing) {
       return (
-        <div>
+        <div className="contact">
+          <div className="name-div">
+            <label>
+              First Name: 
+              <input className="name" name="firstname" onChange={this.handleChange} value={firstname}></input>
+            </label>
+            <label>
+              Last Name: 
+              <input className="name" name="lastname"  onChange={this.handleChange} value={lastname}></input>
+            </label>
+          </div>
+
           <label>
-            First Name:
-            <input name="firstname" onChange={this.handleChange} value={firstname}></input>
-          </label>
-          <label>
-            Last Name:
-            <input name="lastname"  onChange={this.handleChange} value={lastname}></input>
-          </label>
-          <label>
-            Phone Number:
-            <input name="phone"  onChange={this.handleChange} value={phone}></input>
+            Phone Number: 
+            <input className="info" name="phone" type="phone" onChange={this.handleChange} value={phone}></input>
           </label>
           <label>
             Email:
-            <input name="email"  onChange={this.handleChange} value={email}></input>
+            <input className="info" name="email"  onChange={this.handleChange} value={email}></input>
           </label>
           <label>
-            LinkedIn:
-            <input name="linkedin"  onChange={this.handleChange} value={linkedin}></input>
+            LinkedIn: 
+            <input className="info" name="linkedin"  onChange={this.handleChange} value={linkedin}></input>
           </label>
-          <button onClick={this.toggleEditing} type="button">submit</button>
+          <button className="edit-button" onClick={this.toggleEditing} type="button">submit</button>
         </div>
       );
     }
     return (
-      <div>
-       <div>{firstname}</div>
-       <div>{lastname}</div>
+      <div className="contact">
+       <div className="name-div name">{firstname} {lastname}</div>
        <div>{phone}</div>
        <div>{email}</div>
        <div>{linkedin}</div>
-       <button type="button" onClick={this.toggleEditing}>Edit</button>
+       <button className="edit-button" type="button" onClick={this.toggleEditing}>Edit</button>
       </div>
     );
   }

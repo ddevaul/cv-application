@@ -1,0 +1,79 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.projects{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.projects .title{
+  font-size: 2rem;
+  margin: 0 auto auto 0;
+}
+
+.projects input {
+  margin-left: 0.5rem;
+}
+
+.projects button{
+  width: 4rem;
+  height: 2rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10rem;
+}
+
+.project .header {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.project-editing .header,
+.project-editing .description{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.project-editing .description textarea{
+  margin-left: 0.5rem;
+}
+
+.project .description {
+  margin: 0 2rem;
+}
+
+.project-editing{
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+  justify-content: space-between;
+}
+
+.project-editing button{
+  width: 5rem;
+  height: 3rem;
+  margin: 0.5rem auto;
+}
+
+.centered-button-div,
+.projects-centered-button{
+  margin: 0.25rem auto;
+}
+
+.centered-button-div{
+  display: flex;
+  flex-direction: row;
+}
+
+.centered-button-div button{
+  margin-left: 0.5rem;
+}

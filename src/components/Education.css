@@ -1,0 +1,95 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.education{
+  width: 799.5px;
+
+  padding: 1rem;;
+  height: fit-content;
+  border-bottom: 2px solid black;
+ }
+
+ .education-content{
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 10rem;
+}
+
+ .studying{
+  font-weight: normal;
+  display: flex;
+  flex-direction: row;
+ }
+ 
+ .studying .minors{
+   display: flex;
+   flex-direction: row;
+   margin-left: 2rem;
+ }
+
+ .studying .minor{
+  margin: 0 0.5rem;
+ }
+
+ .gpa{
+   font-weight: normal;
+ }
+
+.education-editing{
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  justify-content: center;
+}
+
+.education-editing label{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.education-editing div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+}
+
+.delete-div{
+  display: flex;
+  align-items: center;
+}
+
+.education .title{
+  font-size: 2rem;
+}
+
+ .education button{
+  width: 3rem;
+  height: 2rem;
+  margin: 0.25rem 0.5rem;
+}
+
+.education.editing button{
+  margin: 0.25rem 4rem;
+}
+
+.education.editing input{
+  margin: 0.25rem 0.5rem;
+}
+
+.add-button{
+  display: flex;
+  align-items: center;
+}
+
+.education .centered-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

@@ -1,0 +1,80 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.interests{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: red;
+}
+
+.interests .title{
+  font-size: 2rem;
+  margin: 0 auto auto 0;
+}
+
+.interests input {
+  margin-left: 0.5rem;
+}
+
+.interests button{
+  width: 4rem;
+  height: 2rem;
+}
+
+.interest {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10rem;
+}
+
+.interest .header {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.interest-editing .header,
+.interest-editing .description{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.interest-editing .description textarea{
+  margin-left: 0.5rem;
+}
+
+.interest .description {
+  margin: 0 2rem;
+}
+
+.interest-editing{
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+  justify-content: space-between;
+}
+
+.interest-editing button{
+  width: 5rem;
+  height: 3rem;
+  margin: 0.5rem auto;
+}
+
+.centered-button-div,
+.interests-centered-button{
+  margin: 0.25rem auto;
+}
+
+.centered-button-div{
+  display: flex;
+  flex-direction: row;
+}
+
+.centered-button-div button{
+  margin-left: 0.5rem;
+}

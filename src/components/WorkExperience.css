@@ -1,0 +1,66 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.work{
+  width: 799.5px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid black;
+}
+
+.work button{
+  width: 10rem;
+  height: 3rem;
+  margin: 0.25rem auto;
+}
+
+.work .title{
+  font-size: 2rem;
+}
+
+.job-editing{
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+  justify-content: center;
+}
+
+.job-editing .company,
+.job-editing .position,
+.job-editing .description,
+.job-editing .start,
+.job-editing .end {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.job-editing button {
+  width: 5rem;
+  height: 3rem;
+  margin: 0.25rem 0;
+  margin: 0.5rem auto;
+}
+
+.job-editing input,
+.job-editing textarea {
+  margin-left: 0.5rem;
+}
+
+.job {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10rem;
+}
+.job .company {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.job .details {
+  margin: 0 2rem;
+}
