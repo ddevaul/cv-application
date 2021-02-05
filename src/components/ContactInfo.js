@@ -6,7 +6,7 @@ export default class ContactInfo extends React.Component {
     super(props);
     this.state = {
       editing: false,
-      firstname: "Desi",
+      firstname: "Desmond",
       lastname: "DeVaul",
       phone: "123455789",
       email: "ddevaul@gmail.com",

@@ -11,7 +11,7 @@ export default class Education extends React.Component {
       gradYear: "2024",
       major: "Classics",
       minors: [{minorName: "Computer Science", id: uniqid()}, {minorName: "Chinese", id: uniqid()}], 
-      gpa: "4.20",
+      gpa: "11",
     }
   }
 
