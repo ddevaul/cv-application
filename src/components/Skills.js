@@ -7,8 +7,8 @@ export default class Skills extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      editing: true,
-      skills: [],
+      editing: false,
+      skills: [{skill: "Programming", rating: 4, id: uniqid()}, {skill: "Reading", rating: 4, id: uniqid()}, {skill: "Singing", rating: 1, id: uniqid()}],
     }
   }
   handleRating = (e, rating) => {

@@ -6,8 +6,8 @@ export default class Interests extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      editing: true,
-      interests: [],
+      editing: false,
+      interests: [{title: "Playing guitar", description: "I've played guitar for 12 years.", id: uniqid()}],
     }
   }
 

@@ -6,8 +6,8 @@ export default class Projects extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      editing: true,
-      projects: [],
+      editing: false,
+      projects: [{title: "This App", description: "I made this CV application you're currently using.", id: uniqid()}]
     }
   }
 

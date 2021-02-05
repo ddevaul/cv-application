@@ -9,7 +9,8 @@ export default class WorkExperience extends React.Component {
     super(props);
     this.state = {
       editing: false,
-      experiences: [],
+      experiences: [{company: "Anchorwork", position: "Research Analyst", description: "I helped do stuff", startDate: "1911-02-10", 
+      endDate: "1993-04-15", id: uniqid()}]
     }
   }
 
@@ -30,7 +31,7 @@ export default class WorkExperience extends React.Component {
 
   addExperience = () => {
     this.setState({experiences: [...this.state.experiences, 
-      {company: "Anchorwork", position: "Research Analyst", description: "I helped do stuff", startDate: "", 
+      {company: "", position: "", description: "", startDate: "", 
       endDate: "", id: uniqid()}]});
   }
 

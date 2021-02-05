@@ -6,7 +6,6 @@
 
 
 .interests{
-  width: 19rem;
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -22,7 +21,7 @@
 }
 
 .interests button{
-  width: 4rem;
+  width: 3rem;
   height: 2rem;
 }
 
