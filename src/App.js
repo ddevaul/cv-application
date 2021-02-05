@@ -7,26 +7,23 @@ import Summary from './components/Summary.js'
 import Skills from './components/Skills.js'
 import Interests from './components/Interests.js'
 
-
-
-
-
-
-
 function App() {
   return (  
     <div className="page">
       <div className="App-container">
         <ContactInfo className="contact"/>
-        <Education className="education"/>
-        <div className="container">
-          <Summary></Summary>
-          <Skills className="skills"/>
-          <Interests></Interests>
+        <div className="info">
+          <div className="container-r">
+            <Education className="education"/>
+            <WorkExperience className="work"/>
+            <Projects className="projects"/>
+          </div>  
+          <div className="container-l">
+            <Summary></Summary>
+            <Skills className="skills"/>
+            <Interests></Interests>
+          </div>
         </div>
-        <WorkExperience className="work"/>
-        <Projects className="projects"/>
-        <div className="line"></div>
       </div>
     </div>
    

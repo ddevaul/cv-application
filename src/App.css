@@ -8,43 +8,27 @@
 .App-container{
   margin: 0 auto;
   width: 1125px;
-  display: grid;
-/* could make the left hand side its own flex-direction: column div */
-  grid-template-areas: 
-  "contact contact"
-  "container  education"
-  "container work"
-  "container projects";
-  grid-template-columns: 2fr 5fr;
-}
-
-.contact{
- grid-area: contact;
-}
-
-.work{
-  grid-area: work;
-}
-
-.projects{
-  grid-area: projects;
-}
-
-.container{
-  grid-area: container;
   display: flex;
   flex-direction: column;
 }
+.info {
+  display: grid;
+  grid-template-areas: "container-l container-r";
+  grid-template-columns: 2fr 5fr;
+}
+.container-l{
+  grid-area: container-l;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: calc(1500px - 9rem);
+  border-right: 2px solid black;
+}
 
-.education{
-  grid-area: education;
- }
-
- .line {
-   position: absolute;
-   height: calc(1500px - 9rem);
-   width: 2px;
-   background-color: black;
-   left: 477px;
-   top: 11rem;
- }
+.container-r{
+  grid-area: container-r;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: calc(1500px - 10rem);
+}
