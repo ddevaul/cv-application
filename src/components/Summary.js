@@ -22,17 +22,19 @@ export default class Summary extends React.Component {
     if (editing) {
       return (
         <div className="summary-div">
-          <label>Summary
-            <textarea name="summary" onClick={this.handleChange} value={summary}></textarea>
+          <label className="title"> Summary 
+            <textarea className="summary" name="summary" onChange={this.handleChange} value={summary}></textarea>
+            <button className="edit-button" onClick={this.toggleEditing} type="button">submit</button>
           </label>
-          <button className="edit-button" onClick={this.toggleEditing} type="button">submit</button>
         </div>
       );
     }
     return (
       <div className="summary-div">
-        <p className="summary">{summary}</p>
-        <button className="edit-button" type="button" onClick={this.toggleEditing}>Edit</button>
+        <label className="title">Summary 
+         <p className="summary">{summary}</p>
+         <button className="edit-button" type="button" onClick={this.toggleEditing}>Edit</button>
+        </label>
       </div>
     );
   }

@@ -6,10 +6,10 @@
 
 
 .interests{
+  width: 19rem;
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  background-color: red;
 }
 
 .interests .title{
@@ -29,7 +29,7 @@
 .interest {
   display: flex;
   flex-direction: column;
-  margin: 0 10rem;
+  margin: 0 2rem;
 }
 
 .interest .header {
