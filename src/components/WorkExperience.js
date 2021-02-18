@@ -9,11 +9,12 @@ export default class WorkExperience extends React.Component {
     super(props);
     this.state = {
       editing: false,
+      // default experiences
       experiences: [{company: "Anchorwork", position: "Research Analyst", description: "I helped do stuff", startDate: "1911-02-10", 
       endDate: "1993-04-15", id: uniqid()}]
     }
   }
-
+  // updates state to be value currently in the input
   handleChange = (e) => {
     const attribute = e.target.name.slice(0, (e.target.name.length - 1));
     const index = e.target.name.charAt(e.target.name.length - 1);
@@ -78,7 +79,9 @@ export default class WorkExperience extends React.Component {
         </div>
       );
     }
+    // if not editing:
     let title;
+    // don't display title if there are no work experiences
     if (experiences.length > 0) {
       title = <div className="title">Work Experience</div>;
     }

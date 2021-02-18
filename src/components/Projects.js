@@ -7,10 +7,11 @@ export default class Projects extends React.Component {
     super(props);
     this.state = {
       editing: false,
+      // default projects
       projects: [{title: "This App", description: "I made this CV application you're currently using.", id: uniqid()}]
     }
   }
-
+  // updates state to be value currently in the input
   handleChange = (e) => {
     const attribute = e.target.name.slice(0, (e.target.name.length - 1));
     const index = e.target.name.charAt(e.target.name.length - 1);
@@ -65,7 +66,9 @@ export default class Projects extends React.Component {
         </div>
       );
     }
+    //  if not editing:
     let title;
+    // don't display title if there are no projects
     if (projects.length > 0) {
       title = <div className="title">Projects</div>;
     }

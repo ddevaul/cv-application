@@ -7,10 +7,11 @@ export default class Interests extends React.Component {
     super(props);
     this.state = {
       editing: false,
+      // default interests
       interests: [{title: "Playing guitar", description: "I've played guitar for 12 years.", id: uniqid()}],
     }
   }
-
+  // updates state to be value currently in the input
   handleChange = (e) => {
     const attribute = e.target.name.slice(0, (e.target.name.length - 1));
     const index = e.target.name.charAt(e.target.name.length - 1);
@@ -65,7 +66,9 @@ export default class Interests extends React.Component {
         </div>
       );
     }
+    // if not editing: 
     let title;
+    // don't display title if there are no projects
     if (interests.length > 0) {
       title = <div className="title">Interests</div>;
     }

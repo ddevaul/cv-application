@@ -10,6 +10,7 @@ import Interests from './components/Interests.js'
 function App() {
   return (  
     <div className="page">
+      {/* this is the div that is the size of a piece of paper */}
       <div className="App-container">
         <ContactInfo className="contact"/>
         <div className="info">

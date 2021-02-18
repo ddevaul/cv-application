@@ -6,6 +6,7 @@ export default class ContactInfo extends React.Component {
     super(props);
     this.state = {
       editing: false,
+      // default info
       firstname: "Desmond",
       lastname: "DeVaul",
       phone: "123455789",
@@ -13,6 +14,7 @@ export default class ContactInfo extends React.Component {
       linkedin: "desi@linkedin",
     }
   }
+  // updates state to be value currently in the input
   handleChange = (e) => {
     this.setState({
       [e.target.name]: e.target.value,
@@ -53,6 +55,7 @@ export default class ContactInfo extends React.Component {
         </div>
       );
     }
+    // if not editing: 
     return (
       <div className="contact">
        <div className="name-div name">{firstname} {lastname}</div>

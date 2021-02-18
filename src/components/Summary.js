@@ -6,9 +6,11 @@ export default class Summary extends React.Component {
     super(props);
     this.state = {
       editing: false,
+      // default summary
       summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a mattis nibh. Mauris vel ornare turpis. Mauris commodo rhoncus facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec accumsan, nisi nec posuere consectetur, magna tellus efficitur diam, eget elementum leo libero vel dui.",
     }
   }
+  // updates state to be value currently in the input
   handleChange = (e) => {
     this.setState({
       [e.target.name]: e.target.value,

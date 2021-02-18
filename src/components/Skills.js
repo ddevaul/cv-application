@@ -8,9 +8,11 @@ export default class Skills extends React.Component {
     super(props);
     this.state = {
       editing: false,
+      // default skills
       skills: [{skill: "Programming", rating: 4, id: uniqid()}, {skill: "Reading", rating: 4, id: uniqid()}, {skill: "Singing", rating: 1, id: uniqid()}],
     }
   }
+  // updates state to be value currently in the input
   handleRating = (e, rating) => {
     const name = e.target.name;
     const tempArray = this.state.skills;
@@ -73,6 +75,7 @@ export default class Skills extends React.Component {
         </div>
       );
     }
+    // if not editing:
     return (
       <div className="skills">
        {skillsLabel}

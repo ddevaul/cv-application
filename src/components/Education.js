@@ -14,7 +14,7 @@ export default class Education extends React.Component {
       gpa: "11",
     }
   }
-
+  // updates state to be value currently in the input
   handleChange = (e) => {
     const name = e.target.name;
     if (name.includes('minors')) {
@@ -91,6 +91,7 @@ export default class Education extends React.Component {
         </div>
       );
     }
+    // if not editing: 
     return (
       <div className="education">
         <p className="title">Education</p>
