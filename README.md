@@ -1,3 +1,9 @@
+# cv-application
+## Live demo:
+ddevaul.github.io/cv-application
+## Description:
+This is a sample CV/Resume application I built using React. As listed below, this was bootstrap with Create React App. This project demonstrates my ability to work with functional components and hooks in React. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
